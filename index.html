@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Folhi — Política de Privacidade</title>
-  <meta name="description" content="Política de privacidade do Folhi, um diário local-first que lembra das suas pessoas.">
+  <meta name="description" content="Política de privacidade do Folhi, um diário local-first que lembra das suas pessoas, com estatísticas de uso anônimas.">
   <style>
     :root { --bg:#faf7f2; --fg:#1d1a16; --muted:#6b645b; --accent:#8a5a2b; --card:#ffffff; --line:#e6dfd4; }
     @media (prefers-color-scheme: dark) {
@@ -28,11 +28,11 @@
   <main>
     <header>
       <h1>Folhi</h1>
-      <p>Política de Privacidade · Última atualização: 7 de novembro de 2026</p>
+      <p>Política de Privacidade · Última atualização: 8 de novembro de 2026</p>
     </header>
 
     <div class="card">
-      <p>O Folhi é um diário pessoal que funciona <strong>localmente no seu aparelho</strong>. Não há conta, não há servidor próprio do Folhi e não coletamos dados pessoais.</p>
+      <p>O Folhi é um diário pessoal que funciona <strong>localmente no seu aparelho</strong>. Não há conta e não há servidor próprio do Folhi. O que você escreve nunca sai do aparelho. Para entender como o app é usado e corrigir falhas, o Folhi envia estatísticas de uso anônimas, descritas na seção 3.</p>
     </div>
 
     <h2>1. Dados armazenados no aparelho</h2>
@@ -47,22 +47,40 @@
       <li><strong>Notificações</strong>: lembretes são enviados somente se você ativá-los.</li>
     </ul>
 
-    <h2>3. Serviços de terceiros</h2>
-    <p>O mapa usa o Google Maps SDK para Android, que pode enviar ao Google dados técnicos necessários para exibir os mapas (como endereço IP e área visualizada), conforme a <a href="https://policies.google.com/privacy" rel="noopener">Política de Privacidade do Google</a>. Não usamos analytics, publicidade nem serviços de rastreamento.</p>
+    <h2>3. Estatísticas de uso e relatórios de erro (PostHog)</h2>
+    <p>O Folhi usa o <a href="https://posthog.com/privacy" rel="noopener">PostHog</a> (PostHog, Inc., servidores nos Estados Unidos) para estatísticas de uso e relatórios de falhas. Os dados não são vinculados a nome, e-mail ou conta, e são usados só para melhorar o app.</p>
+    <p><strong>O que é enviado:</strong></p>
+    <ul>
+      <li><strong>Identificador aleatório</strong> criado na instalação, que não identifica você.</li>
+      <li><strong>Dados técnicos</strong>: modelo e sistema do aparelho, versão do app, idioma e fuso horário. O endereço IP é recebido pelo servidor ao enviar os dados e pode ser usado para estimar o país.</li>
+      <li><strong>Uso do app</strong>: telas abertas, abertura e fechamento do app, e ações como salvar um momento, uma pessoa ou uma interação, importar, exportar e concluir a introdução. Essas ações levam apenas contagens e indicadores, por exemplo número de palavras, número de mídias ou se há um lugar anexado.</li>
+      <li><strong>Compras</strong>: qual plano do Folhi Premium foi comprado ou restaurado. O pagamento em si é processado pelo Google Play.</li>
+      <li><strong>Erros e falhas</strong>: tipo de erro, rastreamento técnico (stack trace) e registros técnicos do início do app.</li>
+    </ul>
+    <p><strong>O que nunca é enviado:</strong> o texto dos seus momentos, títulos, nomes de pessoas, contatos, tags, lugares, coordenadas, fotos, vídeos, áudios ou qualquer outro conteúdo do seu diário.</p>
+    <p>Não usamos esses dados para publicidade, não os vendemos e não os cruzamos com outras fontes.</p>
 
-    <h2>4. Compartilhamento</h2>
-    <p>Não vendemos, alugamos nem compartilhamos dados pessoais. Ao enviar cartões, PDFs ou imagens de mapa, o arquivo é gerado no aparelho e enviado por você, pelo aplicativo que escolher. Nada é hospedado pelo Folhi.</p>
+    <h2>4. Outros serviços de terceiros</h2>
+    <ul>
+      <li><strong>Google Maps SDK para Android</strong>: o mapa pode enviar ao Google dados técnicos necessários para exibi-lo (como endereço IP e área visualizada), conforme a <a href="https://policies.google.com/privacy" rel="noopener">Política de Privacidade do Google</a>.</li>
+      <li><strong>Google Play e RevenueCat</strong>: usados para processar e confirmar compras do Folhi Premium. Recebem um identificador de compra anônimo, conforme as políticas do <a href="https://policies.google.com/privacy" rel="noopener">Google</a> e da <a href="https://www.revenuecat.com/privacy" rel="noopener">RevenueCat</a>.</li>
+    </ul>
+    <p>Não usamos publicidade nem serviços de rastreamento entre apps.</p>
 
-    <h2>5. Exportação e exclusão</h2>
-    <p>Você pode exportar todos os seus dados em um arquivo .zip aberto e documentado, e pode excluir tudo desinstalando o aplicativo ou limpando os dados do app nas configurações do Android.</p>
+    <h2>5. Compartilhamento</h2>
+    <p>Não vendemos nem alugamos dados. Os únicos dados enviados a terceiros são os descritos nas seções 3 e 4. Ao enviar cartões, PDFs ou imagens de mapa, o arquivo é gerado no aparelho e enviado por você, pelo aplicativo que escolher. Nada é hospedado pelo Folhi.</p>
 
-    <h2>6. Crianças</h2>
-    <p>O Folhi não é direcionado a crianças e não coleta dados de ninguém, inclusive de menores.</p>
+    <h2>6. Exportação, exclusão e retenção</h2>
+    <p>Você pode exportar todos os seus dados em um arquivo .zip aberto e documentado, e pode excluir tudo desinstalando o aplicativo ou limpando os dados do app nas configurações do Android. Isso também apaga o identificador aleatório usado nas estatísticas.</p>
+    <p>As estatísticas de uso e os relatórios de erro ficam guardados no PostHog por até 12 meses e depois são apagados. Para pedir a exclusão antes disso, entre em contato pelo canal da seção 9.</p>
 
-    <h2>7. Alterações</h2>
+    <h2>7. Crianças</h2>
+    <p>O Folhi não é direcionado a crianças e não coleta intencionalmente dados de menores.</p>
+
+    <h2>8. Alterações</h2>
     <p>Esta política pode ser atualizada. Mudanças serão publicadas nesta página com a nova data.</p>
 
-    <h2>8. Contato</h2>
+    <h2>9. Contato</h2>
     <p>Dúvidas ou sugestões: abra uma issue no <a href="https://github.com/rabpaulo/folhi-privacy/issues" rel="noopener">repositório do projeto</a>.</p>
 
     <footer>
